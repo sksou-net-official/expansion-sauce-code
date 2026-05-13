@@ -9,4 +9,4 @@ YouTube Focus Lite series source code. Not Open Source
 - 個人のローカル環境での試用：OK
 - **無断での再配布・改変・商用利用：NG**
 
-Copyright (c) 2026 sksou. All rights reserved.
+Copyright (c) 2026 ぺ〜ひょろろろ. All rights reserved.
