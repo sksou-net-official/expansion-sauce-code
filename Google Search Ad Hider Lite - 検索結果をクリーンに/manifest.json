@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Google Search Ad Hider Lite - 検索結果をクリーンに",
+    "version": "1.0",
+    "description": "Google検索結果のスポンサー広告を非表示にして、目的の情報に素早くアクセス。超軽量3KiB設計。",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.google.co.jp/search*",
+                "https://www.google.com/search*"
+            ],
+            "css": ["style.css"]
+        }
+    ]
+}

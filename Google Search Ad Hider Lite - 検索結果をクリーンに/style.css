@@ -1,0 +1,35 @@
+/* 検索結果上部の広告コンテナ (id="tads") を非表示 */
+#tads, 
+#tvcap,
+.commercial-unit-desktop-top,
+.commercial-unit-desktop-rhs {
+    display: none !important;
+}
+
+/* 下部の広告コンテナがあれば非表示 */
+#bottomads {
+    display: none !important;
+}
+
+/* 1. 広告であることを示すデータ属性を持つ要素を消す（最も確実） */
+[data-text-ad="1"],
+[data-ta-slot] {
+    display: none !important;
+}
+
+/* 2. 「スポンサー」というラベルが含まれるコンテナを非表示にする */
+/* クラス名が変わっても、この構造は大抵共通です */
+div:has(> .ki3Mlf), 
+div:has(> [aria-level="2"]) {
+    display: none !important;
+}
+
+/* 3. ボタンのような「スポンサー検索結果を表示」という部分も消す */
+[data-hveid] .MmMIvd {
+    display: none !important;
+}
+
+/* これだけで上部エリアがスッキリ */
+#taw {
+    display: none !important;
+}
