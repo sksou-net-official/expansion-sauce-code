@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube PiP Lite - ボタン一つでピクチャーインピクチャー",
+  "version": "1.0",
+  "description": "YouTubeショートや動画をワンクリックでピクチャーインピクチャー(PiP)モードに切り替えます。",
+  "action": {
+    "default_title": "PiPを起動"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["scripting", "activeTab"]
+}
