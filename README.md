@@ -1,5 +1,5 @@
-# YouTube-Focus-Lite
-YouTube Focus Lite series source code. Not Open Source
+# 拡張機能ソースコード開示ページ
+ぺ〜ひょろろろによって提供されている拡張機能を公表しています。(公式)
 
 
 ## License / ライセンス
