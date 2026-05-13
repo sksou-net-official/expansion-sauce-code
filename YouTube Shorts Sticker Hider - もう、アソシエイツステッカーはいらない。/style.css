@@ -1,0 +1,14 @@
+/* ステッカー本体（カスタム要素）を非表示 */
+yt-overlay-sticker.ytOverlayStickerHost {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* 万が一クラス名が変更されても、商品ステッカーの内部構造から特定して消す */
+.ytOverlayProductStickerHost,
+.ytOverlayProductStickerImageContainer,
+.ytOverlayProductStickerTitleButton {
+    display: none !important;
+}
