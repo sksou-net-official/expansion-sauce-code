@@ -1,0 +1,15 @@
+/* 関連動画（サイドバー）を丸ごと非表示 */
+ytd-watch-next-secondary-results-renderer {
+    display: none !important;
+}
+
+/* 動画終了後の「おすすめ（終了画面）」も消したい場合は以下を追加 */
+.videowall-endscreen {
+    display: none !important;
+}
+
+/* コメント欄も誘惑の元なので消したい場合は以下を有効化 */
+/* ytd-item-section-renderer#sections {
+    display: none !important;
+}
+*/

@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Focus Lite - 関連動画を非表示にして集中",
+    "version": "1.0",
+    "description": "YouTubeの関連動画を非表示にして、視聴に集中するための超軽量ツール。",
+    "permissions": [],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/watch?v=*"
+            ],
+            "css": [
+                "style.css"
+            ]
+        }
+    ]
+}
