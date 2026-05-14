@@ -1,0 +1,35 @@
+/* --- Yahoo Ads Block Lite Core --- */
+
+/* 1. Yahoo!広告 (Yads) 関連のコンテナとiframeを直撃 */
+[id^="yads_"],
+[class*="yads"],
+iframe[src*="yads.yjtag.yahoo.co.jp"],
+iframe[src*="yads.c.yimg.jp"] {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* 2. Criteoや独自バナー用の属性セレクタ (提示されたdata属性を狙い撃ち) */
+[data-uv-element*="yads"],
+[data-inbanner="1"],
+.yjAdLink,
+.yjAdImage {
+    display: none !important;
+}
+
+/* 3. 広告枠を包んでいる汎用的な難読化クラスへの対策 */
+/* sc-1hyvns6-0 などの動的クラスが含まれる親要素を非表示に */
+div:has(> [id^="yads_"]),
+div:has(> [data-uv-element]) {
+    display: none !important;
+}
+
+/* 4. 広告フィードバックや「iアイコン」もセットで消去 */
+[data-i-type="overlay"],
+[data-i-elm="wrapper"] {
+    display: none !important;
+}

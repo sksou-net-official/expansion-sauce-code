@@ -1,0 +1,36 @@
+/* --- Google Ads Block Lite Core --- */
+
+/* 1. 標準的なAdSenseコンテナとiframeホストを非表示 */
+ins.adsbygoogle,
+[id^="aswift_"][id$="_host"],
+[id^="google_ads_iframe"],
+.adsbygoogle {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* 2. サイドレール広告 (Side Rail Ads) の特定属性を狙い撃ち */
+ins.adsbygoogle[data-side-rail-status],
+ins.adsbygoogle[data-ad-status="filled"],
+.left-side-rail-edge,
+.left-side-rail-dismiss-btn,
+.right-side-rail-edge,
+.right-side-rail-dismiss-btn {
+    display: none !important;
+}
+
+/* 3. 広告が消えた後の親要素の空白を詰める (モダンブラウザ用) */
+div:has(> ins.adsbygoogle),
+div:has(> [id^="aswift_"]) {
+    display: none !important;
+}
+
+/* 4. アンカー広告（画面上下に張り付くタイプ）の抑制 */
+#google_ads_p_wrapper,
+.google-ads-anchor-view {
+    display: none !important;
+}

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Yahoo Ads Block Lite",
+  "version": "1.0",
+  "description": "Yahoo!広告(Yads)やCriteoなどの国内主要バナーを非表示に。超軽量・高速CSSブロック。",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["style.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

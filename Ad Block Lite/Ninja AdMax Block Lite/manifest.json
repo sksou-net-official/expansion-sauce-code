@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Ninja AdMax Block Lite",
+  "version": "1.0",
+  "description": "忍者AdMaxの広告を非表示に。日本国内のサイト閲覧を快適にする超軽量CSSブロック。",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["style.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

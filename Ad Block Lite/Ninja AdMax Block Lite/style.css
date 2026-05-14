@@ -1,0 +1,31 @@
+/* --- Ninja AdMax Block Lite Core --- */
+
+/* 1. クラス名・ID名での一括非表示（admax-ads クラスを直撃） */
+[class^="admax-"],
+[id^="admax-"],
+.admax-ads,
+.admax_ad_container {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* 2. 独自属性 (data-admax-id) を持つ要素を完全に消去 */
+[data-admax-id] {
+    display: none !important;
+}
+
+/* 3. 中身のiframeやスクリプト生成要素の抑制 */
+iframe[src*="admax.jp"],
+iframe[name^="admax"] {
+    display: none !important;
+}
+
+/* 4. 広告が消えた後の親要素の空白を削除（親要素が特定の構造の場合） */
+div:has(> .admax-ads),
+div:has(> [data-admax-id]) {
+    display: none !important;
+}

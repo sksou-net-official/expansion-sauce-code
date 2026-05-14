@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Google Ads Block Lite",
+  "version": "1.0",
+  "description": "Webサイト上のGoogleバナー広告を非表示に。CSSのみで動作する超軽量・高速設計。",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["style.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
