@@ -1,4 +1,4 @@
-/* --- Google Ads Block Lite Core --- */
+/* --- Google Ads Block Lite Core (Enhanced) --- */
 
 /* 1. 標準的なAdSenseコンテナとiframeホストを非表示 */
 ins.adsbygoogle,
@@ -33,4 +33,15 @@ div:has(> [id^="aswift_"]) {
 #google_ads_p_wrapper,
 .google-ads-anchor-view {
     display: none !important;
+}
+
+/* 5. 【追加】全画面広告（Interstitial）およびSafeFrameの完全抑制 */
+iframe[id^="google_ads_iframe_/4330625/Interstitial_"],
+iframe[title="サードパーティの広告コンテンツ"],
+iframe[data-is-safeframe="true"] {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    opacity: 0 !important;
 }
